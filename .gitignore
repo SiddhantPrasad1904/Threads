@@ -1,0 +1,18 @@
+# This is a documentation/download repository. Upload binaries as release assets.
+*.exe
+*.zip
+.env
+.env.*
+*.dpapi
+*.sqlite*
+*.db
+*.log
+credentials/
+screenshots/
+profiles/
+src/
+build/
+dist/
+*.pfx
+*.key
+*.pem
