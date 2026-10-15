@@ -13,3 +13,6 @@ Official component sources and licensing information:
 - Inno Setup (installer): https://jrsoftware.org/
 
 The application publisher's identity, support contact and application distribution terms must be supplied with the public release. This file does not grant a new license to Thread's proprietary application code or prompt logic.
+
+
+For 0.2.0 RC1, matching Qt/PySide source archives accompany the release as Thread-0.2.0-rc1-ThirdParty-Sources.zip. See THIRD-PARTY-SOURCE-ACCESS.md for source URLs and library replacement instructions. Support uses the public GitHub Issues page; security reporting follows SECURITY.md. Closed-source preview use is covered by APPLICATION-LICENSE.md.

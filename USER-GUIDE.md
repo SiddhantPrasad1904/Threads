@@ -36,4 +36,10 @@ Uninstall through Windows Installed apps. Work history and encrypted credentials
 - **Already running:** use the tray icon; only one desktop instance per profile is allowed.
 - **Interrupted session after a crash:** recover paused or end the session; recovery never silently starts capture.
 
-The app does not detect input inactivity inside an active Remember session. Pause when away. Visual filtering and disk quota still apply. Export and saved Resume are offline; AI extraction normally happens at Stop in this release. No automatic updates, cloud synchronization or collaboration are included.
+The app does not detect input inactivity inside an active Remember session. Pause when away. Visual filtering and disk quota still apply. Export and saved Resume are offline; AI extraction normally happens at Stop in this release. No automatic updates or private-evidence cloud synchronization are included. Optional organization sharing requires a separately deployed server.
+
+
+## Organization sharing (optional)
+Set the HTTPS organization origin in Settings. Mark a thread Work, choose Share work task, enter only content you intend to publish, and approve Copy reviewed draft. Open the organization board in your browser, sign in, import the draft, select workspace/project and review every field before Publish. Copy the shared task link back to the desktop to link it locally. Labeling a thread Work never publishes its private evidence.
+
+Shared task statuses refresh in the browser. Important updates lists blocked/completed changes from other members; read state is durable and new updates can be muted per workspace. Account/workspace deletion and ownership changes require explicit confirmation. There is no automatic private-task completion upload, background email delivery or OS push.

@@ -1,0 +1,7 @@
+# Third-party source access for 0.2.0 RC1
+
+The release includes `Thread-0.2.0-rc1-ThirdParty-Sources.zip`, containing unmodified source archives for Qt Base, Qt SVG, Qt Image Formats, and PySide/Shiboken 6.11.2, plus original source URLs and SHA-256 hashes. This is third-party library source, not Thread application source. Extract the archive and follow each component's included build instructions. Exact original downloads were obtained from https://download.qt.io/archive/qt/6.11/6.11.2/submodules/ and https://download.qt.io/official_releases/QtForPython/pyside6/PySide6-6.11.2-src/.
+
+Thread dynamically loads the shipped Qt/PySide libraries under `_internal/PySide6` and Shiboken under `_internal/shiboken6`; keep backups and replace compatible rebuilt libraries in an extracted portable copy when exercising library modification rights. Thread performs no custom signature check preventing replacement of these libraries. Use an ABI-compatible toolchain and matching Python/Qt versions. Applicable third-party license rights and required debugging/reverse-engineering rights override conflicting application terms. Full dependency license texts/notices are included under `licenses/` and runtime folders.
+
+Source availability and an inventory do not constitute independent legal compliance certification. Other bundled components retain their license and notice requirements. See THIRD-PARTY-NOTICES.md and APPLICATION-LICENSE.md.
