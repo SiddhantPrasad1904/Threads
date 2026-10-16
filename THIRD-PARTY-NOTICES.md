@@ -12,7 +12,7 @@ Official component sources and licensing information:
 - windows-capture: https://github.com/NiiightmareXD/windows-capture
 - Inno Setup (installer): https://jrsoftware.org/
 
-The application publisher's identity, support contact and application distribution terms must be supplied with the public release. This file does not grant a new license to Thread's proprietary application code or prompt logic.
+The public repository includes a component inventory and license texts in the development ZIP. The publisher has not completed independent license clearance for this exact dev4 dependency/native binary set. Check the exact versions and obligations before redistribution. This file is not legal advice and does not grant a new license to Thread's proprietary application code or prompt logic.
 
 
-For 0.2.0 RC1, matching Qt/PySide source archives accompany the release as Thread-0.2.0-rc1-ThirdParty-Sources.zip. See THIRD-PARTY-SOURCE-ACCESS.md for source URLs and library replacement instructions. Support uses the public GitHub Issues page; security reporting follows SECURITY.md. Closed-source preview use is covered by APPLICATION-LICENSE.md.
+The dev4 draft does not claim that a matching corresponding-source archive is included. Earlier draft assets and source archives may target older builds. Do not rely on an older archive to satisfy obligations for dev4. Support uses the public GitHub Issues page; security reporting follows SECURITY.md. Closed-source preview use is covered by APPLICATION-LICENSE.md.

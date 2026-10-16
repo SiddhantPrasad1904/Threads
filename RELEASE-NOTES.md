@@ -1,9 +1,25 @@
-# Thread 0.2.0 RC1
+# Thread 0.2.0 RC2 dev4 — unpublished preview
 
-Windows x64 preview. This candidate includes the current desktop visual design and explicit organization draft/link controls. The organization server is a separate private deployment; no server, corporate account or cloud hosting is bundled with the Windows application.
+Current artifact: portable Windows x64 ZIP. This is a development candidate. The existing GitHub release remains draft and unpublished. Older setup and ZIP assets remain in the draft for history and do not contain dev4.
 
-Core features: scoped Remember/Pause/Resume/Stop capture, WGC screenshots with local filtering, bounded 256 MiB default screenshot cache, BYOK AI configuration, grounded WorkState, editable handoffs, Resume and Markdown export. Personal evidence is private by default; organization publication requires explicit review.
+## Candidate changes
 
-This is a prerelease, not a completed enterprise deployment. M5/M6/cache human acceptance, clean-machine coverage, real organizational SSO/PostgreSQL/TLS, load testing and operational restore validation remain separate gates. No email/desktop push, auto-updater, domain exclusion, SCIM or automatic private-to-shared completion inference. Existing personal data is preserved by uninstall. Back up your profile before testing upgrades.
+- Added an explicit Settings notice that browser-domain exclusion is not available. Users must Pause before private browser sites.
+- Retained WGC foreground capture, initial-context capture at Start/Resume, visual filtering, event persistence, process exclusions, input-inactivity suppression, and bounded screenshot cache.
+- Retained optional provider configuration, provenance-grounded WorkState, saved handoffs, Resume, and corrected Markdown export.
+- Retained organization task/status sharing with explicit review and publication, role-based workspaces, inbox updates, invitation/identity controls, and restricted SCIM support. A production organization host is not provided.
 
-See APPLICATION-LICENSE.md, PRIVACY.md and SECURITY.md. AI providers receive selected evidence only with configuration/consent; their terms and usage charges apply. No credentials are included in this download.
+## Verification
+
+- Desktop suite: 302 passed, 3 skipped.
+- Organization service suite: 74 passed; two dependency deprecation warnings.
+- Organization browser tests: 8 passed.
+- Packaged dev4 offline smoke: 7 checks passed.
+- Credential-pattern release scan: 153 files scanned, no findings. Pattern scans do not prove absence of every secret.
+- Portable ZIP SHA-256: `9e1cc02e9f5558903083d0994cda23ce120a63678c972b7a71d1e9108827a7f1`.
+
+No live provider, fresh real-window capture, clean-machine installation, production deployment, or end-to-end human acceptance is claimed by these automated checks.
+
+## Open gates
+
+M5 Resume, M6 export, screenshot-cache and full end-to-end acceptance remain awaiting human review. Current-source installer compilation is blocked by the host's NSIS startup error. Build is unsigned. Raw local history/screenshots are not encrypted by Thread. Browser-domain exclusions and automatic update are absent. Real Docker/PostgreSQL/SSO/TLS hosting, backup/restore, multi-machine organization acceptance, complete accessibility review, third-party license clearance, and independent security assessment remain open. Do not treat this preview as an enterprise-ready release.

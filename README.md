@@ -1,27 +1,36 @@
 # Thread for Windows
 
-Thread helps you return to unfinished work. Start Remembering, work normally, then Stop to create a grounded handoff. Review or correct it, and return later through Resume. Export saved context as Markdown.
+Thread helps you return to unfinished work. Start Remembering, work normally, then Stop to create a grounded handoff. Review or correct it, and return later through Resume.
 
-**0.2.0 RC1 is an unsigned preview, not a completed enterprise release.** Windows x64, Windows 10 build 19041 or newer. AI is optional and uses your own compatible provider key; image input and strict structured JSON support are required. Provider charges/data policies apply.
+## Current preview
 
-## Downloads
+The unpublished development preview is **0.2.0 RC2 dev4**, Windows x64. It is a portable ZIP; extract the complete folder and run `Thread.exe`. No separate Python installation is needed. The preview is unsigned. Check the SHA-256 file before use.
 
-Use [GitHub Releases](https://github.com/SiddhantPrasad1904/Threads/releases) when the reviewed candidate is published. A draft is visible only to repository maintainers. Choose `Thread-0.2.0-rc1-Setup-x64.exe` or extract the entire portable ZIP and run `Thread.exe`. No separate Python installation is needed. Check the SHA-256 values in `SHA256SUMS.txt`. An unsigned preview does not have verified publisher signing identity.
+This is a development preview, not a completed public release or enterprise service. The existing GitHub release remains a draft. Older setup and ZIP assets in that draft are historical and do not contain dev4. Read RELEASE-NOTES.md and USER-GUIDE.md before use.
 
-Matching third-party library source archives are provided as `Thread-0.2.0-rc1-ThirdParty-Sources.zip`. This is dependency source, not proprietary Thread source. See THIRD-PARTY-SOURCE-ACCESS.md.
+## What it does
 
-## Features and boundaries
+- Foreground observation only during an active Remember session. Pause and Stop end observation; Thread does not record keystrokes.
+- Windows Graphics Capture with local visual filtering, process exclusions, input-inactivity suppression, and a configurable bounded screenshot cache. Browser-site exclusions are not available; Pause before private sites.
+- Optional bring-your-own-key multimodal provider for grounded WorkState, editable handoffs, and Resume. Evidence stays local unless you configure and invoke a provider or deliberately publish reviewed organization content.
+- Local history, provenance, crash-safe event persistence, and Markdown export with saved corrections and credential-pattern redaction.
+- Optional separately deployed organization workspace for explicitly reviewed shared tasks and optional handoffs. Private screenshots, notes, and WorkState are not synchronized.
 
-Scoped foreground capture, Pause/Resume/Stop, WGC screenshots with filtering, 256 MiB default bounded screenshot cache, notes, BYOK AI setup, grounded state, editable handoffs, Resume and Markdown export. Closing a window leaves the tray running; use **Quit Thread** to exit completely.
+## Not release-ready yet
 
-The latest interface and optional organization draft/link controls are included. Organization sharing requires a separately deployed private server and configured identity provider; no hosted team service is provided by this download. No automatic private-evidence synchronization or automatic shared task completion inference.
+M5 Resume, M6 export, screenshot-cache, and end-to-end human acceptance remain pending. No verified current-source installer or code signing is available. Raw local history and screenshots are not encrypted by Thread. Browser-domain exclusions and automatic updates are absent. Real SSO, Docker, PostgreSQL, HTTPS deployment, backup-restore, multi-machine acceptance, accessibility review, and independent security assessment remain open.
 
-No claim is made that the full readiness checklist is complete. Real organizational hosting/SSO/PostgreSQL, clean-machine coverage, user acceptance, full accessibility, load/security review and operational restore testing remain pending. No email/desktop push, SCIM, browser-domain exclusions, inactivity auto-pause or automatic updater. Read RELEASE-NOTES.md before use.
+## Downloads and docs
 
-## Privacy and support
+The draft prerelease is at [GitHub Releases](https://github.com/SiddhantPrasad1904/Threads/releases). Do not install the older setup binary as if it contained dev4. Current preview files and checksums are listed in the draft body.
 
-Capture occurs only in active Remember sessions; Pause before private activity. Selected evidence is sent to your configured AI provider with consent. Local work evidence is not encrypted by Thread. Saved API keys use Windows DPAPI or environment variables. Never post keys, passwords, profiles or private screenshots in public issues. Read PRIVACY.md.
+- [User guide](USER-GUIDE.md)
+- [Privacy](PRIVACY.md)
+- [Release notes](RELEASE-NOTES.md)
+- [Security reporting](SECURITY.md)
+- [Third-party notices](THIRD-PARTY-NOTICES.md)
+- [Application preview terms](APPLICATION-LICENSE.md)
 
-General support: [GitHub Issues](https://github.com/SiddhantPrasad1904/Threads/issues). Security reports: follow [SECURITY.md](SECURITY.md) and use private reporting. No guaranteed response time.
+Support: [GitHub Issues](https://github.com/SiddhantPrasad1904/Threads/issues). Never post API keys, passwords, local databases, screenshots, or private work evidence in public issues.
 
-This repository hosts downloads and documentation only. MIT applies to repository documentation, not application binaries or proprietary implementation. Application use follows [APPLICATION-LICENSE.md](APPLICATION-LICENSE.md). Third-party licenses retain their own rights.
+This public repository contains downloads and documentation only. MIT terms apply to repository documentation, not Thread application binaries or private implementation. See APPLICATION-LICENSE.md.
